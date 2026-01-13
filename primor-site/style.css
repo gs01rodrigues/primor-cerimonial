@@ -1,0 +1,279 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS DE CORES */
+:root {
+    --dourado: #c9a24d;
+    --preto: #1c1c1c;
+    --offwhite: #f8f6f2;
+}
+
+/* ESTILO GERAL */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--offwhite);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.slogan {
+    font-size: 1rem;
+    color: var(--dourado);
+    margin-top: 5px;
+}
+
+/* HERO */
+/* SEÇÃO SOBRE */
+/* SEÇÃO SOBRE */
+.sobre {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD CENTRAL */
+.sobre-card {
+    background-color: white;
+    padding: 60px 40px;
+    max-width: 800px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* TÍTULO */
+.sobre-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* DETALHE DOURADO */
+.sobre-card h2::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--dourado);
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* TEXTO */
+.sobre-card p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+
+/* DETALHE ELEGANTE ABAIXO DO TÍTULO */
+.sobre h2::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--dourado);
+    display: block;
+    margin: 15px auto 0;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+
+/* RODAPÉ */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+.cta {
+  background: #f7f5f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  color: #555;
+  font-size: 16px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #c7a04a;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #b48e3f;
+  transform: translateY(-2px);
+}
+/* BOTÃO WHATSAPP FLUTUANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background-color: var(--dourado);
+    color: white;
+
+    padding: 14px 22px;
+    border-radius: 50px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* SEÇÃO SERVIÇOS */
+.servicos {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* TÍTULO DA SEÇÃO */
+.servicos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.servicos h2::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--dourado);
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* CONTAINER DOS CARDS */
+.servicos-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD INDIVIDUAL */
+.servico-card {
+    background-color: white;
+    padding: 40px 30px;
+    max-width: 300px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+/* EFEITO SUAVE */
+.servico-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TÍTULO DO CARD */
+.servico-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+/* TEXTO DO CARD */
+.servico-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .sobre-card {
+        padding: 40px 25px;
+    }
+
+    .servicos {
+        padding: 80px 20px;
+    }
+
+    .servico-card {
+        max-width: 100%;
+    }
+
+    .whatsapp-float {
+        padding: 12px 18px;
+        font-size: 0.85rem;
+    }
+}
